@@ -7,6 +7,9 @@ import App from './components/app';
 import Docs from './components/docs';
 import Root from './components/root';
 
+// Analytics
+import ga from 'react-ga';
+
 const routes = (
   <Route path="/" component={Root}>
     <IndexRoute component={App} />
@@ -19,6 +22,7 @@ export default {
   routes,
 
   run: (el) => {
+    ga.initialize("UA-43290258-1", { debug: true });
     const router = (
       <Router history={createBrowserHistory()}>
         {routes}

@@ -1,6 +1,13 @@
 import React from 'react';
 
+// Analytics
+import ga from 'react-ga';
+
 class Docs extends React.Component {
+  componentWillMount() {
+    ga.pageview('/victory/docs');
+  }
+
   render () {
     return (
       <div>
