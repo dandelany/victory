@@ -4,7 +4,7 @@ Victory is a collection of composable React components you can use to build inte
 
 ### Overarching benefits and motivations
 
-We built Victory because we wanted to bridge the gap between beginners (more likely to use Chart.js or Highcharts) and experts (more likely to use D3). This meant that we had to provide a gradient of customization, from none (just pass in data) to full (build your own visualization features). It also meant focusing on developer UX generally, and led us to provide interactive documentation to help developers get visualizations into their projects (see [ecology.js](https://github.com/FormidableLabs/ecology)) see [victory-chart](projects.formidablelabs.com/victory-chart/) for an example.
+We built Victory because we wanted to bridge the gap between beginners (more likely to use Chart.js or Highcharts) and experts (more likely to use D3). This meant that we had to provide a gradient of customization, from none (just pass in data) to full (build your own visualization features). It also meant focusing on developer UX generally, and led us to provide interactive documentation to help developers get visualizations into their projects. We built [ecology.js](https://github.com/FormidableLabs/ecology) for this, see [victory-chart](projects.formidablelabs.com/victory-chart/) for an example.
 
 Thanks to React's expressiveness this had the lovely byproduct of making data visualizations first class citizens in the open source ecosystem. Victory components *each* have:
   * Repos rather than gists
