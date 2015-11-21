@@ -21,8 +21,8 @@ Thanks to React's expressiveness this had the lovely byproduct of making data vi
 
 ### Why React made Victory possible
 
-* React's DOM model makes D3's DOM model unnecessary
-* React's component lifecycle management makes D3's data binding API's unnecessary
+* React's DOM model
+* React's component lifecycle management
 * React allows encapsulation of state + style + behavior in a reusable component
 * JSX syntax is awesome for component composition
 * Radium means components own their styles and style events, can compute them based on data
