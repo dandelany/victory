@@ -22,7 +22,8 @@ export default {
   routes,
 
   run: (el) => {
-    ga.initialize("UA-43290258-1", { debug: true });
+    ga.initialize("UA-43290258-1");
+
     const router = (
       <Router history={createBrowserHistory()}>
         {routes}
