@@ -2,6 +2,7 @@ var CleanPlugin = require("clean-webpack-plugin");
 var path = require("path");
 var StaticSiteGeneratorPlugin = require("static-site-generator-webpack-plugin");
 var StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
+var webpack = require("webpack");
 
 var base = require("./webpack.config.dev.js");
 
@@ -28,6 +29,11 @@ module.exports = {
     new CleanPlugin([ "./" + OUTPUT_DIR ]),
     new StatsWriterPlugin({
       filename: "stats.json"
+    }),
+    new webpack.DefinePlugin({
+      // Signal production, so that webpack removes non-production code that
+      // is in condtionals like: `if (process.env.NODE_ENV === "production")`
+      "process.env.NODE_ENV": JSON.stringify("production")
     }),
     new StaticSiteGeneratorPlugin("main", routes)
   ]
