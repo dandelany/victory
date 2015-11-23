@@ -8,10 +8,9 @@ var base = require("./webpack.config.dev.js");
 
 var OUTPUT_DIR = "gh-pages";
 
-// All routes we want to static-render--in this case, just the index page:
+// All routes we want to static-render
 var routes = [
-  "/",
-  "docs"
+  "/"
 ];
 
 module.exports = {
